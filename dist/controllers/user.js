@@ -38,7 +38,7 @@ const newUser = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
     }
     catch (error) {
         resp.status(400).json({
-            msg: 'Upps ocurrio un error',
+            msg: 'Upps ourrio un error',
             error
         });
     }
