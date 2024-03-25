@@ -1,11 +1,18 @@
 import { Sequelize } from "sequelize";
 
+import {
+    DB_DATABASE, DB_HOST, DB_PASSWORD, DB_PORT, DB_USER
+    
+    } from "../config"
 
-
-const sequelize = new Sequelize(process.env.DB_DATABASE || "companydb", process.env.DB_USER || "root", process.env.DB_PASSWORD || "admin", {
-    host: process.env.DB_HOST || "localhost",
-    dialect: 'mysql'
-})
+const sequelize = new Sequelize(
+    DB_DATABASE || "companydb",
+    DB_USER || "root", 
+    DB_PASSWORD || "admin",
+    {
+        host: DB_HOST || "localhost",
+        dialect: 'mysql'
+    })
 /*
 const sequelize = new Sequelize('companydb', 'root','admin',{
     host: 'localhost',

@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const sequelize_1 = require("sequelize");
-const sequelize = new sequelize_1.Sequelize(process.env.DB_DATABASE || "companydb", process.env.DB_USER || "root", process.env.DB_PASSWORD || "admin", {
-    host: process.env.DB_HOST || "localhost",
+const config_1 = require("../config");
+const sequelize = new sequelize_1.Sequelize(config_1.DB_DATABASE || "companydb", config_1.DB_USER || "root", config_1.DB_PASSWORD || "admin", {
+    host: config_1.DB_HOST || "localhost",
     dialect: 'mysql'
 });
 /*
