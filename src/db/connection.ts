@@ -11,7 +11,7 @@ const sequelize = new Sequelize(
     DB_PASSWORD,
     {
         host: DB_HOST,
-        dialect: 'mysql'
+       dialect: 'mysql'
     })
 /*
 const sequelize = new Sequelize('companydb', 'root','admin',{

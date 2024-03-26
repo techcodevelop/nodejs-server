@@ -5,6 +5,7 @@ import routesUser from '../routes/user'
 import { Product } from './product'
 import { User } from './user'
 
+
 class Server{
 
     private app: Application
