@@ -6,11 +6,11 @@ import {
     } from "../config"
 
 const sequelize = new Sequelize(
-    DB_DATABASE || "companydb",
-    DB_USER || "root", 
-    DB_PASSWORD || "admin",
+    DB_DATABASE,
+    DB_USER, 
+    DB_PASSWORD,
     {
-        host: DB_HOST || "localhost",
+        host: DB_HOST,
         dialect: 'mysql'
     })
 /*
